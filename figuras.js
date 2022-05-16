@@ -89,3 +89,23 @@ function calcularAreaCuadrado() {
     const area = areaCuadrado(value);
     alert(area);
 }
+
+//codigo calcular altura triangulo isoseles
+console.group("Practica Isoseles");
+
+function alturaTrianguloIsoseles(trianguloGrandeLadoA, trianguloGrandeLadoB, trianguloGrandeLadoBase) {
+    if (trianguloGrandeLadoA != trianguloGrandeLadoB) {
+        console.log("Los lados a y b no son iguales ");
+    } else {
+        const trianguloPequenoLadoB = trianguloGrandeLadoB / 2;
+        const trianguloPequenoBase = trianguloGrandeLadoA;
+
+        const trianguloPequenoLadoBCuadrado = trianguloPequenoBase * trianguloPequenoBase;
+        const trianguloPequenoBaseCuadrado = trianguloPequenoBase * trianguloPequenoBase;
+
+        const trianguloPequenoLadoA = Math.sqrt(trianguloPequenoBaseCuadrado - trianguloPequenoLadoBCuadrado);
+        const trianguloGrandeAltura = trianguloPequenoLadoA;
+        return trianguloGrandeAltura;
+    }
+}
+console.groupEnd();
