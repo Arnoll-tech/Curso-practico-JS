@@ -18,12 +18,17 @@ function calcularMediaAritmetica(lista) {
 
 const lista1 = [
     100,
+    800, 
+    256,
     300, 
-    300,
-    3000, 
+    400,
+    300, 
+    700,
+    
     
 ];
-
+lista1.sort();
+console.log(lista1);
 const mitadLista1 = parseInt(lista1.length / 2);
 function esPar(numerito) {
     if (numerito % 2 === 0) {
